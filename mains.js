@@ -19,7 +19,7 @@ function diminuiTamanho(){
       tamanhoSenha--;  
     }
     numeroSenha.textContent = tamanhoSenha;
-    geraSenha();
+    gerarSenha();
 }
 function aumentaTamanho(){
     if (tamanhoSenha < 20){
@@ -27,13 +27,13 @@ function aumentaTamanho(){
         tamanhoSenha++;
     }
     numeroSenha.textContent = tamanhoSenha;
-    geraSenha();
+    gerarSenha();
 }
 
 for (let i = 0; i < checkbox.length; i++){
-    checkbox[i].onclick = geraSenha;
+    checkbox[i].onclick = gerarSenha;
 }
-geraSenha();
+gerarSenha();
 
 function gerarSenha(){
     let alfabeto = '';
